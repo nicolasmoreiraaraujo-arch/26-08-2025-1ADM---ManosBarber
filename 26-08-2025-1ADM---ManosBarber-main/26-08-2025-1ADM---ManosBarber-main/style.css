@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-roor{
+:roor{
   --verde-escuro: #004030
   --verde-claro:  #4A9782
   --dourado:#DCD0A8
   --branco: #FFF9E5
-  --texto: "Inter", sans-serif;
-  --titulo:  "Raleway", sans-serif;
-} 
-
-
+}
 body{
-    background-color: var(--branco);
-    font-family: var(--titulo);
+    background-color: blueviolet;
 }
