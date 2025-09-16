@@ -1,0 +1,49 @@
+:roor{
+  --verde-escuro: #004030
+  --verde-claro:  #4A9782
+  --dourado:#DCD0A8
+  --branco: #FFF9E5
+}
+body{
+    background-color: blueviolet;
+}
+
+body{
+  background-color: var(--verde-escuro);
+  font-family: var(--texto);
+  margin: 0;
+}
+
+header{
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+}
+
+.img.logo{
+  width: 10%;
+  border-radius: 100%;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  color: var(--branco);
+  font-size: 20px;
+  font-family: var(--titulo);
+  text-transform: uppercase;
+}
+
+.menu a:hover{
+  text-decoration: none;
+  color: var(--verde);
+}
+
+.menu a:hover{
+  color: var(--preto)
+  transition 0.5:
+}
+
