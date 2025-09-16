@@ -1,15 +1,17 @@
-:roor{
-  --verde-escuro: #004030
-  --verde-claro:  #4A9782
-  --dourado:#DCD0A8
-  --branco: #FFF9E5
-}
-body{
-    background-color: blueviolet;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root{
+  --verde-escuro: #004030;
+  --verde-claro:  #4A9782;
+  --dourado:#DCD0A8;
+  --branco: #FFF9E5;
+  --preto:#000000;
+  --texto:"Inter", sans-serif;
+  --titulo:"Bitcount Grid Double", system-ui;
+  
+}
 body{
-  background-color: var(--verde-escuro);
+    background-color: var(--preto);
   font-family: var(--texto);
   margin: 0;
 }
@@ -22,7 +24,7 @@ header{
   align-items: center;
 }
 
-.img.logo{
+.img-logo{
   width: 10%;
   border-radius: 100%;
 }
@@ -37,13 +39,13 @@ header{
   text-transform: uppercase;
 }
 
-.menu a:hover{
+.menu a{
   text-decoration: none;
   color: var(--verde);
 }
 
 .menu a:hover{
-  color: var(--preto)
-  transition 0.5:
+  color: var(--preto);
+  transition: 0.5;
 }
 
