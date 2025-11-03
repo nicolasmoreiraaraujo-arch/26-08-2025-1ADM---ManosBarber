@@ -113,3 +113,30 @@ header{
     width: 100%;
     border-radius: 10px;
   }
+
+  .produto h3{
+       font-family: var(--texto);
+       color: var(--verde-claro);
+       font-size: 24xp;
+  }
+
+  .produto p{
+    font-family: var(--texto);
+    color: var(--preto);
+    font-size: 19xp;
+    font-style: normal;
+  }
+  .produto button:hover{
+    padding: 10px 24px;
+    font-size: 16px;
+    font-family: var(--texto);
+    background-color: var(--verde-claro);
+    color: var(--dourado);
+    border: none;
+     border-radius: 12px;
+  }
+  .produto button:hover{
+     background-color: var(--preto);
+    transition: 0.3s;
+    cursor: pointer;
+  }
