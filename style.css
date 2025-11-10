@@ -1,35 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root{
+:root {
   --verde-escuro: #004030;
-  --verde-claro:  #4A9782;
-  --dourado:#DCD0A8;
+  --verde-claro: #4A9782;
+  --dourado: #DCD0A8;
   --branco: #FFF9E5;
-  --preto:#000000;
-  --texto:"Inter", sans-serif;
-  --titulo:"Bitcount Grid Double", system-ui;
-  
-}
-body{
-    background-color: var(--preto);
-  font-family: var(--texto);
-  margin: 0;
+  --preto: #000000;
+  --texto: "Inter", sans-serif;
+  --titulo: "Bitcount Grid Double", system-ui;
+
 }
 
-header{
-  background-color: blue;
+body {
+  background-color: var(--preto);
+  font-family: var(--texto);
+  margin: 0;
+  color: var(--branco);
+}
+
+header {
+  background-color: var(--dourado);
   display: flex;
   justify-content: space-around;
   padding: 10px;
   align-items: center;
 }
 
-.img-logo{
+.img-logo {
   width: 10%;
   border-radius: 100%;
 }
 
-.menu{
+main{
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
   display: flex;
   list-style: none;
   gap: 30px;
@@ -39,104 +46,132 @@ header{
   text-transform: uppercase;
 }
 
-.menu a{
+.menu a {
   text-decoration: none;
-  color: var(--verde);
+  color: var(--preto);
 }
 
-.menu a:hover{
-  color: var(--preto);
+.menu a:hover {
+  color: var(--verde-claro  );
   transition: 0.5;
 }
-.capa{
+
+.capa {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
-.capa img{
+.capa img {
   width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
 }
 
-.apresentacao{
+.apresentacao {
   font-family: var(--titulo);
   text-align: center;
   margin: 40px 0;
 }
 
-.apresentacao h2{
+.apresentacao h2 {
   color: var(--verde-claro);
   font-size: 50px;
 }
 
 
-.apresentacao p{
-  color: (var(--preto));
+.apresentacao p {
   font-size: 25px;
   font-family: var(--texto);
 }
+.sobre{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0 100px 0;
+}
+.sobre h2{
+  font-family: var(--titulo);
+  font-size: 40px;
+  color: var(--verde-claro);
+  margin-bottom: 15px;
+}
+
+.sobre p{
+  font-size: 24px;
+  color: var(--esmeralda);
+}
+footer{
+  background-color: var(--dourado);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--preto);
+  font-size: 18px;
+}
 
 /* Produtos */
-  .produtos{
-    padding: 40px 0;
-    text-align: center;
-  }
+.produtos {
+  padding: 40px 0 120px 0;
+  text-align: center;
+}
 
-  .produtos h2{
-    font-family: var(--titulo);
-    font-size: 40px;
-    color: var(--preto);
-    margin: 40px;
-  }
+.produtos h2 {
+  font-family: var(--titulo);
+  font-size: 40px;
+  color: var(--verde-claro);
+  margin: 40px;
+}
 
-  .lista-produtos{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+.lista-produtos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-  .produto{
-    background-color:#4A9782 ;
-    width: 27%;
-    padding: 20px;
-    border-radius: 10px;
-  }
+.produto {
+  background-color: #4A9782;
+  width: 27%;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-  .produto img{
-    width: 100%;
-    border-radius: 10px;
-  }
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+}
 
-  .produto h3{
-       font-family: var(--texto);
-       color: var(--verde-claro);
-       font-size: 24xp;
-  }
+.produto h3 {
+  font-family: var(--texto);
+  color: var(--preto);
+  font-size: 24xp;
+}
 
-  .produto p{
-    font-family: var(--texto);
-    color: var(--preto);
-    font-size: 19xp;
-    font-style: normal;
-  }
-  .produto button:hover{
-    padding: 10px 24px;
-    font-size: 16px;
-    font-family: var(--texto);
-    background-color: var(--verde-claro);
-    color: var(--dourado);
-    border: none;
-     border-radius: 12px;
-  }
-  .produto button:hover{
-     background-color: var(--preto);
-    transition: 0.3s;
-    cursor: pointer;
-  }
+.produto p {
+  font-family: var(--texto);
+  color: var(--preto);
+  font-size: 19xp;
+  font-style: normal;
+}
+
+.produto button{
+  padding: 10px 24px;
+  font-size: 16px;
+  font-family: var(--texto);
+  background-color: var(--verde-escuro);
+  color: var(--dourado);
+  border: none;
+  border-radius: 12px;
+}
+
+.produto button:hover {
+  background-color: var(--preto);
+  transition: 0.3s;
+  cursor: pointer;
+}
