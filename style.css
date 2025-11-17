@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --verde-escuro: #004030;
+  --verde-claro: #4A9782;
+  --dourado: #DCD0A8;
+  --branco: #FFF9E5;
+  --preto: #000000;
+  --texto: "Inter", sans-serif;
+  --titulo: "Bitcount Grid Double", system-ui;
+
+}
+
+body {
+  background-color: var(--preto);
+  font-family: var(--texto);
+  margin: 0;
+  color: var(--branco);
+}
+
+header {
+  background-color: var(--dourado);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+}
+
+.img-logo {
+  width: 10%;
+  border-radius: 100%;
+}
+
+main{
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  color: var(--branco);
+  font-size: 20px;
+  font-family: var(--titulo);
+  text-transform: uppercase;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.menu a:hover {
+  color: var(--verde-claro  );
+  transition: 0.5;
+}
+
+.capa {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.capa img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.apresentacao {
+  font-family: var(--titulo);
+  text-align: center;
+  margin: 40px 0;
+}
+
+.apresentacao h2 {
+  color: var(--verde-claro);
+  font-size: 50px;
+}
+
+
+.apresentacao p {
+  font-size: 25px;
+  font-family: var(--texto);
+}
+.sobre{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0 100px 0;
+}
+.sobre h2{
+  font-family: var(--titulo);
+  font-size: 40px;
+  color: var(--verde-claro);
+  margin-bottom: 15px;
+}
+
+.sobre p{
+  font-size: 24px;
+  color: var(--esmeralda);
+}
+footer{
+  background-color: var(--dourado);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--preto);
+  font-size: 18px;
+}
+
+
+
+.produtos {
+  padding: 40px 0 120px 0;
+  text-align: center;
+}
+
+.produtos h2 {
+  font-family: var(--titulo);
+  font-size: 40px;
+  color: var(--verde-claro);
+  margin: 40px;
+}
+
+.lista-produtos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.produto {
+  background-color: #4A9782;
+  width: 27%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.produto h3 {
+  font-family: var(--texto);
+  color: var(--preto);
+  font-size: 24xp;
+}
+
+.produto p {
+  font-family: var(--texto);
+  color: var(--preto);
+  font-size: 19xp;
+  font-style: normal;
+}
+
+.produto button{
+  padding: 10px 24px;
+  font-size: 16px;
+  font-family: var(--texto);
+  background-color: var(--verde-escuro);
+  color: var(--dourado);
+  border: none;
+  border-radius: 12px;
+}
+
+.produto button:hover {
+  background-color: var(--preto);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Contato */
+.contato {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contato h2 {
+    font-size: 40px;
+    font-family: var(--titulo);
+}
+
+.form-contato {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form-contato textarea {
+    height: 120px;
+}
